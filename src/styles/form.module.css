@@ -1,0 +1,53 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.input {
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--button-background-color);
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.button:hover {
+    border-color: var(--button-border-color);
+}
+
+.button:focus,
+.button:focus-visible {
+    background-color: green;
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button:disabled {
+    cursor: auto;
+    background-color: var(--disabled-color);
+    border: none;
+}
+
+.error {
+    font-size: 0.8em;
+    color: var(--eror-color);
+}
